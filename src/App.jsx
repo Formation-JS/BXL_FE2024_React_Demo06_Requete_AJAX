@@ -1,4 +1,5 @@
 import './App.css'
+import StationApp from './containers/StationApp/StationApp';
 
 function App() {
 
@@ -7,13 +8,17 @@ function App() {
       <h1>Demo 06</h1>
       <h2>Requete AJAX</h2>
 
+      <StationApp />
+
       {/* Formulaire pour chercher le nom d'une gare */}
       {/* Dashboard de la gare rechercher */}
       {/* 
           Composant : 
            - SearchForm
-           - Dahsboard
-           - Loading
+           - StationRequest
+             - Dahsboard
+             - Loading
+             - Error
           Container : 
            - StationApp
       */}
