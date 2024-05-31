@@ -16,7 +16,8 @@ const SearchForm = ({ onSearch, labelContent }) => {
         event.preventDefault();
 
         // Envoye des données (state) vers le composant parent
-        onSearch(query);
+        // La fonction "trim" supprimer les espaces avant et arpès le contenu
+        onSearch(query.trim());
 
         // Réinitialiser le formulaire
         setQuery('');
